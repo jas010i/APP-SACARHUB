@@ -9,10 +9,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-        <!--CSS Links Here-->
-            <link rel="stylesheet" href="CSS/main.css">
-            <link rel="stylesheet" href="CSS/mobile-only.css">
 
+        <!--CSS Links Here-->
+                <!--API Icon CSS-->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                <!--Native CSS-->
+                    <link rel="stylesheet" href="CSS/main.css">
+                    <link rel="stylesheet" href="CSS/mobile-only.css">
                 <!--AOS CSS for Fade Animations-->
                     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -23,6 +27,8 @@
 
         <!--Google Font's Here-->
             <link rel="preconnect" href="https://fonts.gstatic.com">
+                <!--Jura Font-->
+                <link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap" rel="stylesheet">
                 <!--Cormorant Font-->
                     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
                 <!--Economica Font-->
@@ -34,41 +40,14 @@
 
     <body>
 
-                                <script>AOS.init();</script>
-
-
-
-        <div class="background-image">
-            <img src="IMAGES/background-main.png" alt="bakground pattern">
-        </div>
-
         <header>
             <div class="banner">
                 <h3>San Antonio Car Hub</h3>
                 <h4>Police Tracker</h4>
-                <p><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="red" class="bi bi-dot" viewBox="0 0 15 15">
-                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                  </svg>Live
-                </p>
             </div>
-        </header>
-
-        <div class="mobile-warning">
-            <h1>Attention: You're viewing this page on a non-mobile device. <br>
-                Please come back on a mobile device.
-            </h1>
-        </div>
-
-        <div class="live-fade-in">
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="red" class="bi bi-dot" viewBox="0 0 15 15">
-                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-              </svg>Live
-            </p>
-        </div>
 
 
-
- <!--
+             <!--
 
         The report button should grab the user's current location
             and register to either the closest highway, freeway,
@@ -77,12 +56,47 @@
             and display the current 'hot' identifier, so that other
             users can see how 'hot' an area is.
 
- -->
+            -->
 
         <div class="report-button">
             <button type="button">Report a Hotspot</button>
         </div>
+        </header>
 
+        <div class="mobile-warning">
+            <h1>Attention: You're viewing this page on a non-mobile device. <br>
+                Please come back on a mobile device.
+            </h1>
+        </div>
+
+<div class="hotspot-blocks">
+    <h1>Loop 1604 and I-10</h1>
+        <h3><i class="material-icons" style="font-size:5vw">filter_1</i> Recent Reports</h3>
+        <i class="fa fa-thermometer-0" style="font-size:4vw; padding-left: 3%; margin-bottom: 2%;"></i>  No Police Presence Reported
+</div>
+<div class="hotspot-blocks">
+    <h1>US-281</h1>
+        <h3><i class="material-icons" style="font-size:5vw">filter_4</i> Recent Reports</h3>
+        <i class="fa fa-thermometer-2" style="font-size:4vw; padding-left: 3%; margin-bottom: 2%;"></i>  Light Police Presence Reported
+</div>
+<div class="hotspot-blocks">
+    <h1>I-10 and De Zavala</h1>
+        <h3><i class="material-icons" style="font-size:5vw">filter_9</i> Recent Reports</h3>
+        <i class="fa fa-thermometer-4" style="font-size:4vw; padding-left: 3%; margin-bottom: 2%;"></i>  Heavy Police Presence Reported
+</div>
+<div class="hotspot-blocks">
+    <h1>Medical Center</h1>
+        <h3><i class="material-icons" style="font-size:5vw">filter_5</i> Recent Reports</h3>
+        <i class="fa fa-thermometer-3" style="font-size:4vw; padding-left: 3%; margin-bottom: 2%;"></i>  Medium Police Presence Reported
+</div>
+
+
+<div class="live-fade-in">
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="red" class="bi bi-dot" viewBox="0 0 15 15">
+        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+      </svg>Live
+    </p>
+</div>
 
     </body>
 

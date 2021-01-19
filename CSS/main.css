@@ -3,30 +3,29 @@
 html {
     margin: 0;
     width: 100%;
-    background-color: rgb(20, 20, 20);
 }
 
 body {
     margin: 0;
-    overflow-x: hidden;
-}
-
-div.background-image > img {
-    z-index: -5;
-    background-position: center;
-    background-size: contain;
+    background-image: url('../IMAGES/background-main.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100%;
+    background-color: rgb(20, 20, 20);
 }
 
 header {
     margin: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
-    z-index: +9999;
     display: block;
-    position: absolute;
+    position: relative;
+    padding-bottom: 4%;
     top: 0;
+    animation-name: report-button;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
 }
 
 div.banner > h3 {
@@ -46,39 +45,12 @@ div.banner > h4 {
     padding: 4%;
     padding-top: 1%;
     padding-bottom: 0;
-    padding-right: 0;
     text-align: center;
-    display: inline-block;
-    width: 25%;
-    padding-left: 32.5%;
     margin: 0;
     font-weight: 100;
     font-family: 'Economica', sans-serif;
     font-style: italic;
 }
-
-div.banner > p {
-    color: rgb(255, 255, 255);
-    font-size: 5vw;
-    padding: 4%;
-    padding-top: 0;
-    padding-left: 0;
-    text-align: left;
-    margin: 0;
-    font-weight: 100;
-    display: inline-block;
-    width: 25%;
-    font-family: 'Economica', sans-serif;
-    font-style: italic;
-    animation-name: live;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-        @keyframes live {
-            from {opacity: 100%;}
-            to {opacity: 0%;}
-        }
 
 div.mobile-warning {
     display: none;
@@ -86,16 +58,24 @@ div.mobile-warning {
 
 div.report-button > button {
     color: white;
-    background-color: rgba(139, 0, 0, 0.25);
+    background-color: rgba(24, 24, 24, 0.74);
     border: 1px solid white;
     padding: 2%;
-    border-radius: 5px;
-    position: absolute;
-    top: 40%;
+    border-radius: 0;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    font-family: 'Jura', sans-serif;
+    position: relative;
+    display: block;
     width: 50%;
     left: 25%;
     text-align: center;
 }
+
+        @keyframes report-button {
+            from {top: -200px;}
+            to {top: 0;}
+        }
 
 div.live-fade-in > p {
     color: rgb(255, 255, 255);
@@ -108,7 +88,7 @@ div.live-fade-in > p {
     font-weight: 100;
     position: fixed;
     top: 2%;
-    z-index: 0;
+    z-index: +9999;
     right: 0;
     display: inline-block;
     font-family: 'Economica', sans-serif;
@@ -119,4 +99,35 @@ div.live-fade-in > p {
     animation-direction: alternate;
 }
 
+            @keyframes live {
+                from {opacity: 0%;}
+                to {opacity: 100%;}
+                
+            }
+
+div.hotspot-blocks {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 95%;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    margin-left: 0;
+    display: block;
+    margin-top: 5%;
+    position: relative;
+    margin-bottom: 1%;
+    animation-name: hot-block;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+                @keyframes hot-block {
+                    from{top: -400px;}
+                    to{top: 0;}
+                }
+
+    div.hotspot-blocks > h1, h3 {
+        padding-left: 3%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
