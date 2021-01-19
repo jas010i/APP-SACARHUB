@@ -1,0 +1,122 @@
+@media only screen and (max-width: 800px) {
+
+html {
+    margin: 0;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+div.background-image > img {
+    z-index: -5;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+header {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    z-index: +9999;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+div.banner > h3 {
+    color: rgb(255, 255, 255);
+    font-size: 5vw;
+    padding: 4%;
+    padding-bottom: 1%;;
+    text-align: center;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 100;
+}
+
+div.banner > h4 {
+    color: rgb(200, 0, 0);
+    font-size: 5vw;
+    padding: 4%;
+    padding-top: 1%;
+    padding-bottom: 0;
+    padding-right: 0;
+    text-align: center;
+    display: inline-block;
+    width: 25%;
+    padding-left: 32.5%;
+    margin: 0;
+    font-weight: 100;
+    font-family: 'Economica', sans-serif;
+    font-style: italic;
+}
+
+div.banner > p {
+    color: rgb(255, 255, 255);
+    font-size: 5vw;
+    padding: 4%;
+    padding-top: 0;
+    padding-left: 0;
+    text-align: left;
+    margin: 0;
+    font-weight: 100;
+    display: inline-block;
+    width: 25%;
+    font-family: 'Economica', sans-serif;
+    font-style: italic;
+    animation-name: live;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+        @keyframes live {
+            from {opacity: 100%;}
+            to {opacity: 0%;}
+        }
+
+div.mobile-warning {
+    display: none;
+}
+
+div.report-button > button {
+    color: white;
+    background-color: rgba(139, 0, 0, 0.25);
+    border: 1px solid white;
+    padding: 2%;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    width: 50%;
+    left: 25%;
+    text-align: center;
+}
+
+div.live-fade-in > p {
+    color: rgb(255, 255, 255);
+    font-size: 5vw;
+    padding: 4%;
+    padding-top: 0;
+    padding-left: 0;
+    text-align: left;
+    margin: 0;
+    font-weight: 100;
+    position: fixed;
+    top: 2%;
+    z-index: 0;
+    right: 0;
+    display: inline-block;
+    font-family: 'Economica', sans-serif;
+    font-style: italic;
+    animation-name: live;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+}

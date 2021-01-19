@@ -1,0 +1,6 @@
+@media only screen and (min-width: 801px) {
+
+    div.mobile-warning {
+        display: block;
+    }
+}
