@@ -58,7 +58,7 @@ div.mobile-warning {
 
 div.report-button > button {
     color: white;
-    background-color: rgba(24, 24, 24, 0.74);
+    background-color: rgba(0, 0, 0, 0.233);
     border: 1px solid white;
     padding: 2%;
     border-radius: 0;
@@ -68,9 +68,30 @@ div.report-button > button {
     position: relative;
     display: block;
     width: 50%;
+    transition: 2s ease-in-out;
     left: 25%;
     text-align: center;
 }
+
+div.report-button > button:focus {
+    outline: none;
+}
+
+                div.report-button > button:disabled {
+                    color: rgb(73, 73, 73);
+                    background-color: rgba(24, 24, 24, 0.658);
+                    border: 1px solid rgb(77, 77, 77);
+                    padding: 2%;
+                    border-radius: 0;
+                    margin-bottom: 7%;
+                    margin-top: 7%;
+                    font-family: 'Jura', sans-serif;
+                    position: relative;
+                    display: block;
+                    width: 50%;
+                    left: 25%;
+                    text-align: center;
+                }
 
         @keyframes report-button {
             from {top: -200px;}
@@ -105,6 +126,13 @@ div.live-fade-in > p {
                 
             }
 
+div.main-feed {
+    margin-top: 5%;
+    display: block;
+    height: 450px;
+    overflow-y: scroll;
+}
+
 div.hotspot-blocks {
     background-color: rgba(0, 0, 0, 0.3);
     width: 95%;
@@ -124,6 +152,8 @@ div.hotspot-blocks {
                     from{top: -400px;}
                     to{top: 0;}
                 }
+
+    
 
     div.hotspot-blocks > h1, h3 {
         padding-left: 3%;

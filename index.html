@@ -22,8 +22,8 @@
 
 
         <!--Javascript Links Here-->
-                <!--AOS JS for Fade Animations-->
-                    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <!--Native JS-->
+                    <script src="JS/submit.js"></script>
 
         <!--Google Font's Here-->
             <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -59,7 +59,7 @@
             -->
 
         <div class="report-button">
-            <button type="button">Report a Hotspot</button>
+            <button type="button" id="button-submit" onclick="submit();">Report a Hotspot</button>
         </div>
         </header>
 
@@ -69,25 +69,30 @@
             </h1>
         </div>
 
-<div class="hotspot-blocks">
-    <h1>Loop 1604 and I-10</h1>
-        <h3><i class="material-icons" style="font-size:5vw">filter_1</i> Recent Reports</h3>
-        <i class="fa fa-thermometer-0" style="font-size:4vw; padding-left: 3%; margin-bottom: 2%;"></i>  No Police Presence Reported
-</div>
-<div class="hotspot-blocks">
-    <h1>US-281</h1>
-        <h3><i class="material-icons" style="font-size:5vw">filter_4</i> Recent Reports</h3>
-        <i class="fa fa-thermometer-2" style="font-size:4vw; padding-left: 3%; margin-bottom: 2%;"></i>  Light Police Presence Reported
-</div>
-<div class="hotspot-blocks">
-    <h1>I-10 and De Zavala</h1>
-        <h3><i class="material-icons" style="font-size:5vw">filter_9</i> Recent Reports</h3>
-        <i class="fa fa-thermometer-4" style="font-size:4vw; padding-left: 3%; margin-bottom: 2%;"></i>  Heavy Police Presence Reported
-</div>
-<div class="hotspot-blocks">
-    <h1>Medical Center</h1>
-        <h3><i class="material-icons" style="font-size:5vw">filter_5</i> Recent Reports</h3>
-        <i class="fa fa-thermometer-3" style="font-size:4vw; padding-left: 3%; margin-bottom: 2%;"></i>  Medium Police Presence Reported
+
+
+<div class="main-feed">
+
+                <div class="hotspot-blocks" style="margin-top: 0;">
+                    <h1>Loop 1604 and I-10</h1>
+                        <h3><i class="material-icons" style="font-size:5vw">filter_1</i> Recent Reports</h3>
+                        <i class="fa fa-thermometer-0" style="color: red; font-size:4vw; padding-left: 3%; margin-bottom: 2%;"></i>  No Police Presence Reported
+                </div>
+                <div class="hotspot-blocks">
+                    <h1>US-281</h1>
+                        <h3><i class="material-icons" style="font-size:5vw">filter_4</i> Recent Reports</h3>
+                        <i class="fa fa-thermometer-2" style="color: red; font-size:4vw; padding-left: 3%; margin-bottom: 2%;"></i>  Light Police Presence Reported
+                </div>
+                <div class="hotspot-blocks">
+                    <h1>I-10 and De Zavala</h1>
+                        <h3><i class="material-icons" style="font-size:5vw">filter_9</i> Recent Reports</h3>
+                        <i class="fa fa-thermometer-4" style="color: red; font-size:4vw; padding-left: 3%; margin-bottom: 2%;"></i>  Heavy Police Presence Reported
+                </div>
+                <div class="hotspot-blocks">
+                    <h1>Medical Center</h1>
+                        <h3><i class="material-icons" style="font-size:5vw">filter_5</i> Recent Reports</h3>
+                        <i class="fa fa-thermometer-3" style="color: red; font-size:4vw; padding-left: 3%; margin-bottom: 2%;"></i>  Medium Police Presence Reported
+                </div>
 </div>
 
 
