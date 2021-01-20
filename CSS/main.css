@@ -43,7 +43,7 @@ div.banner > h4 {
     color: rgb(200, 0, 0);
     font-size: 6vw;
     padding: 4%;
-    padding-top: 1%;
+    padding-top: 0%;
     padding-bottom: 0;
     text-align: center;
     margin: 0;
@@ -62,8 +62,8 @@ div.report-button > button {
     border: 1px solid white;
     padding: 2%;
     border-radius: 0;
-    margin-bottom: 7%;
-    margin-top: 7%;
+    margin-bottom: 5%;
+    margin-top: 5%;
     font-family: 'Jura', sans-serif;
     font-size: 4vw;
     position: relative;
