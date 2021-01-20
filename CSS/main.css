@@ -16,16 +16,12 @@ body {
 
 header {
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     display: block;
     position: relative;
     padding-bottom: 4%;
     top: 0;
-    animation-name: report-button;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
 }
 
 div.banner > h3 {
@@ -56,6 +52,16 @@ div.mobile-warning {
     display: none;
 }
 
+p#popup-notice {
+    display: none;
+    text-align: center;
+    color: rgb(40, 170, 0);
+    font-size: 4vw;
+    width: 80%;
+    margin-left: 10%;
+    font-family: 'Jura', sans-serif;
+}
+
 div.report-button > button {
     color: white;
     background-color: rgba(0, 0, 0, 0.233);
@@ -78,7 +84,7 @@ div.report-button > button:focus {
     outline: none;
 }
 
-                div.report-button > button:disabled {
+        div.report-button > button:disabled {
                     color: rgb(73, 73, 73);
                     background-color: rgba(24, 24, 24, 0.658);
                     border: 1px solid rgb(77, 77, 77);
@@ -95,10 +101,6 @@ div.report-button > button:focus {
                     text-align: center;
                 }
 
-        @keyframes report-button {
-            from {top: -200px;}
-            to {top: 0;}
-        }
 
 div.live-fade-in > p {
     color: rgb(255, 255, 255);
@@ -113,7 +115,7 @@ div.live-fade-in > p {
     top: 2%;
     z-index: +9999;
     right: 0;
-    display: inline-block;
+    display: none;
     font-family: 'Economica', sans-serif;
     font-style: italic;
     animation-name: live;
@@ -122,22 +124,47 @@ div.live-fade-in > p {
     animation-direction: alternate;
 }
 
-            @keyframes live {
+        @keyframes live {
                 from {opacity: 0%;}
                 to {opacity: 100%;}
                 
             }
 
+div.icon-legend {
+    display: block;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    width: 95%;
+}
+
+div.icon-legend > span#counter-ticker {
+    display: block;
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
 div.main-feed {
     margin-top: 5%;
+    width: 90%;
+    margin-left: 5%;
     display: block;
-    height: 450px;
-    overflow-y: scroll;
+}
+
+div.main-feed > h1#main-feed-title {
+    font-family: 'Titillium Web', sans-serif;
+    text-align: left;
+    color: white;
+    font-size: 7vw;
+    font-weight: 200;
 }
 
 div.hotspot-blocks {
     background-color: rgba(0, 0, 0, 0.3);
-    width: 95%;
+    width: 100%;
     color: white;
     font-family: 'Titillium Web', sans-serif;
     margin-left: 0;
@@ -145,21 +172,40 @@ div.hotspot-blocks {
     margin-top: 5%;
     position: relative;
     margin-bottom: 1%;
-    animation-name: hot-block;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
 }
 
-                @keyframes hot-block {
-                    from{top: -400px;}
-                    to{top: 0;}
-                }
-
-    
-
-    div.hotspot-blocks > h1, h3 {
+div.hotspot-blocks > h1, h3 {
         padding-left: 3%;
         margin-top: 0;
         margin-bottom: 0;
-    }
+}
+
+footer {
+    background-color: black;
+    margin-top: 15%;
+}
+
+footer > ul.footer-list {
+    padding-top: 10%;
+}
+
+footer > ul > li {
+    margin-bottom: 8%;
+    margin-bottom: 8%;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    font-size: 6vw;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+footer > img {
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 7%;
+    margin-top: 10%;
+}
+
 }

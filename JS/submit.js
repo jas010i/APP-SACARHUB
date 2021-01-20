@@ -12,6 +12,10 @@ function submit() {
 
             count = count - 1;
 
+            document.getElementById("popup-notice").style.display = "block";
+
+            document.getElementById("popup-notice").innerHTML = "Thank you for the heads up!"
+
             document.getElementById("button-submit").innerHTML = "Please wait " + count + " seconds before reporting again.";
 
             document.getElementById("button-submit").disabled = true;
