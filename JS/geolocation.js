@@ -18,6 +18,7 @@
       const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 10,
         center: sanAntonio,
+        mapId:'6cbaf94f194ffc7a',
       });
       // The marker, positioned at San Antonio
       const marker = new google.maps.Marker({
