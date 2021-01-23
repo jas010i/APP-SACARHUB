@@ -24,42 +24,12 @@
         <!--Javascript Links Here-->
                 <!--Native JS-->
                     <script src="JS/submit.js"></script>
-                    <!-- <script src="JS/geolocation.js"></script> -->
-
-
-
-
+                    <script src="JS/geolocation.js"></script> 
 
                     <script defer
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWaEfDgZ0XXRmFZvab-SyU5X92DpcoG2k&callback=initMap&libraries=&v=weekly">
-                </script>
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWaEfDgZ0XXRmFZvab-SyU5X92DpcoG2k&map_ids=6cbaf94f194ffc7a&callback=initMap">
+                    </script>
 
-<style type="text/css">
-    /* Set the size of the div element that contains the map */
-    #map {
-      height: 400px;
-      /* The height is 400 pixels */
-      width: 100%;
-      /* The width is the width of the web page */
-    }
-  </style>
-  <script>
-    // Initialize and add the map
-    function initMap() {
-      // The location of Uluru
-      const uluru = { lat: -25.344, lng: 131.036 };
-      // The map, centered at Uluru
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 4,
-        center: uluru,
-      });
-      // The marker, positioned at Uluru
-      const marker = new google.maps.Marker({
-        position: uluru,
-        map: map,
-      });
-    }
-  </script>
 
 
 
@@ -117,6 +87,20 @@
         </div>
         </header>
 
+
+
+        <div class="heat-map">
+
+
+
+            <div id="map"></div>
+            
+        
+        </div>
+
+        
+
+        
         <div class="mobile-warning">
             <h1>Attention: You're viewing this page on a non-mobile device. <br>
                 Please come back on a mobile device.
@@ -136,6 +120,10 @@
     </span>
 
 </div>
+
+
+
+
 
 
 <div class="main-feed">
@@ -167,15 +155,6 @@
 </div>
 
 
-<div class="heat-map">
-
-
-
-    <div id="map"></div>
-    
-
-</div>
-
 
 
 <div class="live-fade-in">
@@ -189,11 +168,16 @@
 <footer>
 
     <ul class="footer-list">
-        <li><a href="#info">Info</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#privacy">Privacy</a></li>
-        <li><a href="#career">Careers</a></li>
-        <li><a href="#design">iridescXnt Designs</a></li>
+        <li style="margin-bottom: 2%;"><a href="#disclaimer">Disclaimer</a></li>
+            <ul><li id="disclaimer-footer">We do not  <i style="background-color: #ff3300; color: white;"> condone </i>  any form of illegal activity, especially any form of street racing, dig racing, or roll racing. This website is <i style="background-color: #ff3300; color: white;"> solely </i> for entertainment purposes.
+            <br><br>We are <i style="background-color: #ff3300; color: white;"> not liable </i> for any information presented on this website, whether accurate or not.</li></ul>
+      <!--  <li><a href="#about">About</a></li> -->
+        <li style="margin-bottom: 2%;"><a href="#privacy">Privacy</a></li>
+            <ul><li id="disclaimer-footer">We do not store, collect, or sell any information provided to us through the <i style="background-color: #ff3300; color: white;"> 'report a hotspot' </i> feature.</li></ul>
+        <li style="margin-bottom: 2%;"><a href="#career">Careers</a></li>
+                <ul><li id="disclaimer-footer">Coming Soon!</li></ul>
+        <li style="margin-bottom: 2%;"><a href="#design">iridescXnt Designs</a></li>
+                <ul><li id="disclaimer-footer"><a style="text-decoration: none;" href="https://jas010i.github.io/SACH/">San Antonio Car Hub - Home Page</a></li></ul>
 
     </ul>
 

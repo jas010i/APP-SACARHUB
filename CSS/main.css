@@ -7,17 +7,17 @@
     
     body {
         margin: 0;
-        background-image: url('../IMAGES/background-main.png');
+        background-image: url('../IMAGES/back-splash.PNG');
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
-        background-attachment: scroll;
+        background-attachment: fixed;
         background-color: rgb(20, 20, 20);
     }
     
     header {
         margin: 0;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.7);
         width: 100%;
         display: block;
         position: relative;
@@ -145,6 +145,7 @@
         margin-left: 20%;
         text-align: center;
         color: white;
+        font-size: 3vw;
         font-family: 'Titillium Web', sans-serif;
     }
     
@@ -164,7 +165,7 @@
     }
     
     div.hotspot-blocks {
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.7);
         width: 100%;
         color: white;
         font-family: 'Titillium Web', sans-serif;
@@ -180,6 +181,16 @@
             margin-top: 0;
             margin-bottom: 0;
     }
+
+        #map {
+            margin-top: 10%;
+            height: 400px;
+            width: 80%;
+            margin-left: 10%;
+          }
+
+
+
     
     footer {
         background-color: black;
@@ -219,5 +230,18 @@
         margin-bottom: 7%;
         margin-top: 10%;
     }
+
+    footer > ul.footer-list > ul {
+        list-style-type: none;
+    }
+    
+    footer > ul.footer-list > ul > li#disclaimer-footer {
+        text-decoration: none;
+        color:rgb(255, 255, 255);
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 3vw;
+        width: 90%;
+    }
+
     
     }
