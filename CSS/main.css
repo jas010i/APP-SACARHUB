@@ -219,7 +219,7 @@
     footer > ul > li > a {
         text-decoration: none;
         padding: 2%;
-        font-size: 6vw;
+        font-size: 7vw;
         color: white;
         font-family: 'Titillium Web', sans-serif;
     }
@@ -239,7 +239,7 @@
         text-decoration: none;
         color:rgb(255, 255, 255);
         font-family: 'Titillium Web', sans-serif;
-        font-size: 3vw;
+        font-size: 4vw;
         width: 90%;
     }
 

@@ -6,6 +6,10 @@
     
     
     
+    
+    
+    
+    
     // Initialize and add the map
     function initMap() {
       // San Antonio, TX
@@ -13,7 +17,11 @@
       // The map, centered at San Antonio
       const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 10,
-        mapId: '6cbaf94f194ffc7a', 
         center: sanAntonio,
+      });
+      // The marker, positioned at San Antonio
+      const marker = new google.maps.Marker({
+        position: sanAntonio,
+        map: map,
       });
     }
