@@ -20,9 +20,4 @@
         center: sanAntonio,
         mapId:'6cbaf94f194ffc7a',
       });
-      // The marker, positioned at San Antonio
-      const marker = new google.maps.Marker({
-        position: sanAntonio,
-        map: map,
-      });
     }
