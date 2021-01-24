@@ -189,7 +189,7 @@
             margin-left: 10%;
           }
 
-          #demo {
+          #user-latlong {
             color: white; 
             background-color: #ff3300; 
             text-align: center; 
@@ -207,14 +207,6 @@
     footer {
         background-color: black;
         margin-top: 15%;
-        /* ----------------------------------------
-        background-image: url('../IMAGES/footer-background.png');
-        background-size: cover;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        ------------------------------------------*/
-    
     }
     
     footer > ul.footer-list {

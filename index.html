@@ -10,22 +10,29 @@
 
 
 
-        <!--CSS Links Here-->
-                <!--API Icon CSS-->
+        <!--
+            CSS Links Here
+        -->
+                <!--
+                    API Icon CSS
+                -->
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-                <!--Native CSS-->
+                <!--
+                    Native CSS
+                -->
                     <link rel="stylesheet" href="CSS/main.css">
                     <link rel="stylesheet" href="CSS/mobile-only.css">
-                <!--AOS CSS for Fade Animations-->
-                    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
-        <!--Javascript Links Here-->
-                <!--Native JS-->
+        <!--
+            Javascript Links Here
+        -->
+                <!--
+                    Native JS
+                -->
                     <script src="JS/submit.js"></script>
                     <script src="JS/geolocation.js"></script>
-                    <script src="JS/userlocation.js"></script> 
 
                     <script defer
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWaEfDgZ0XXRmFZvab-SyU5X92DpcoG2k&map_ids=6cbaf94f194ffc7a&callback=initMap">
@@ -49,15 +56,25 @@
 
 
 
-        <!--Google Font's Here-->
+        <!--
+            Google Font's Here
+        -->
             <link rel="preconnect" href="https://fonts.gstatic.com">
-                <!--Jura Font-->
+                <!--
+                    Jura Font
+                -->
                 <link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap" rel="stylesheet">
-                <!--Cormorant Font-->
+                <!--
+                    Cormorant Font
+                -->
                     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
-                <!--Economica Font-->
+                <!--
+                    Economica Font
+                -->
                     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Economica:ital@1&display=swap" rel="stylesheet">
-                <!--Titillium Font-->
+                <!--
+                    Titillium Font
+                -->
                     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
 
     </head>
@@ -85,32 +102,60 @@
         <p id="popup-notice"></p>
 
         <div class="report-button">
-            <button type="button" id="button-submit" onclick="getLocation();">Report a Hotspot</button>
+            <button type="button" id="button-submit" onclick="getLocation(); submit();">Report a Hotspot</button>
         </div>
         </header>
 
 
-        <p id="demo"></p>
+
+
+<!--
+    JS for pulling user lat-long coordinates.
+        Not sure why function only works with inline and not external
+        JS file.
+-->
+
+    <div class="latlong-user-coord">
+
+        <p id="user-latlong"></p>
 
         <script>
-        var x = document.getElementById("demo");
+        var userLocation = document.getElementById("user-latlong");
         
         function getLocation() {
           if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
           } else { 
-            x.innerHTML = "Geolocation is not supported by this browser.";
+            userLocation.innerHTML = "Geolocation is not supported by this browser.";
           }
         }
-        
+
+
         function showPosition(position) {
 
-        x.style.display = "block";
+        userLocation.style.display = "block";
 
-          x.innerHTML = "Latitude: " + position.coords.latitude + 
+          userLocation.innerHTML = "Latitude: " + position.coords.latitude + 
           "<br>Longitude: " + position.coords.longitude;
         }
+
+
+
+    
+
+
+
         </script>
+
+    </div>
+
+
+
+
+
+
+
+
 
 
         <div class="heat-map">
