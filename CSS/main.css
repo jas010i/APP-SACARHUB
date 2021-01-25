@@ -8,10 +8,10 @@
     body {
         margin: 0;
         background-image: url('../IMAGES/back-splash.PNG');
-        background-size: cover;
+        background-size: contain;
         background-position: bottom;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-repeat:repeat;
+        background-attachment: scroll;
         background-color: rgb(20, 20, 20);
     }
     
@@ -25,29 +25,10 @@
         top: 0;
     }
     
-    div.banner > h3 {
-        color: rgb(255, 255, 255);
-        font-size: 7vw;
-        padding: 4%;
-        padding-bottom: 1%;;
-        text-align: center;
-        margin: 0;
-        font-family: 'Titillium Web', sans-serif;
-        font-weight: 100;
-    }
-    
-    div.banner > h4 {
-        color: rgb(200, 0, 0);
-        font-size: 6vw;
-        padding: 4%;
-        padding-top: 0%;
-        padding-bottom: 0;
-        text-align: center;
-        margin: 0;
-        font-weight: 100;
-        font-family: 'Economica', sans-serif;
-        font-style: italic;
-    }
+div.banner > img {
+    width: 100%;margin: 0;
+    padding: 0;
+}
     
     div.mobile-warning {
         display: none;
@@ -56,7 +37,10 @@
     p#popup-notice {
         display: none;
         text-align: center;
-        color: rgb(40, 170, 0);
+        background: -webkit-linear-gradient(45deg, rgba(222,0,0,1) 0%, rgba(46,0,255,1) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-size: 4vw;
         width: 80%;
         margin-left: 10%;
@@ -79,6 +63,10 @@
         transition: 2s ease-in-out;
         left: 25%;
         text-align: center;
+    }
+
+    button:hover {
+        cursor: pointer;
     }
     
     div.report-button > button:focus {
@@ -163,6 +151,13 @@
         font-size: 7vw;
         font-weight: 200;
     }
+
+    #thermo {
+        background: -webkit-linear-gradient(45deg, rgba(222,0,0,1) 0%, rgba(46,0,255,1) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     
     div.hotspot-blocks {
         background-color: rgba(0, 0, 0, 0.7);
@@ -187,11 +182,13 @@
             height: 400px;
             width: 80%;
             margin-left: 10%;
+            border: 3px solid black;
           }
 
           #user-latlong {
             color: white; 
-            background-color: #ff3300; 
+            background: rgb(222,0,0);
+            background: linear-gradient(45deg, rgba(222,0,0,1) 0%, rgba(46,0,255,1) 100%);
             text-align: center; 
             font-family:  'Titillium Web', sans-serif; 
             font-weight: 400; 
