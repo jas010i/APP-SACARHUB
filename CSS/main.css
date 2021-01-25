@@ -199,6 +199,7 @@ div.banner > img {
             padding-bottom: 1%;
             margin-top: 0;
             width: 100%;
+            transition: 1s ease-in-out;
           }
 
 
@@ -250,4 +251,9 @@ div.banner > img {
     }
 
     
+
+
+
+
+
     }
