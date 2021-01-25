@@ -1,65 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
 
-    <?php
+<!--php to connect to database-->
+
+<?php
 include 'db_connection.php';
 $conn = OpenCon();
 echo "Connected Successfully";
 CloseCon($conn);
 ?>
 
+
+<!--title & meta-->
+
         <title>San Antonio Car Hub - Hotspot Tracker</title>
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!--External Files-->
 
-
-        <!--
-            CSS Links Here
-        -->
-                <!--
-                    API Icon CSS
-                -->
+        <!--CSS Links Here-->
+                <!--API Icon CSS-->
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-                <!--
-                    Native CSS
-                -->
+                <!--Native CSS-->
+
                     <link rel="stylesheet" href="CSS/main.css">
                     <link rel="stylesheet" href="CSS/mobile-only.css">
 
 
-        <!--
-            Javascript Links Here
-        -->
-                <!--
-                    Native JS
-                -->
+      
+        <!--Javascript Links Here-->
+                <!--Native JS-->
                     <script src="JS/submit.js"></script>
                     <script src="JS/geolocation.js"></script>
                     <script src="JS/userLocation.js"></script>
 
-
-                        
+                <!--Google Maps JS API-->
                     <script defer
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWaEfDgZ0XXRmFZvab-SyU5X92DpcoG2k&map_ids=6cbaf94f194ffc7a&callback=initMap">
                     </script>
-
-
-                        <!--Heatmap Layer
-
-                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWaEfDgZ0XXRmFZvab-SyU5X92DpcoG2k&libraries=visualization"></script>
-                    
-                        -->
-
                     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
                     <script
                       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWaEfDgZ0XXRmFZvab-SyU5X92DpcoG2k&callback=initMap&libraries=visualization&v=weekly"
-                      defer></script>
+                      defer>
+                    </script>
 
 
 
@@ -74,25 +63,15 @@ CloseCon($conn);
 
 
 
-        <!--
-            Google Font's Here
-        -->
+        <!--Google Font's Here-->
             <link rel="preconnect" href="https://fonts.gstatic.com">
-                <!--
-                    Jura Font
-                -->
+                <!--Jura Font-->
                 <link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap" rel="stylesheet">
-                <!--
-                    Cormorant Font
-                -->
+                <!--Cormorant Font-->
                     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
-                <!--
-                    Economica Font
-                -->
+                <!--Economica Font-->
                     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Economica:ital@1&display=swap" rel="stylesheet">
-                <!--
-                    Titillium Font
-                -->
+                <!--Titillium Font-->
                     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
 
     </head>
@@ -105,18 +84,12 @@ CloseCon($conn);
             </div>
 
 
-             <!--
 
-        The report button should grab the user's current location
-            and register to either the closest highway, freeway,
-            interstate, loop, or even major road. Once the report
-            has been submitted it should log it in to the area
-            and display the current 'hot' identifier, so that other
-            users can see how 'hot' an area is.
-
-            -->
 
         <p id="popup-notice"></p>
+
+
+
 
         <div class="report-button">
             <button type="button" id="button-submit" onclick="getLocation(); submit();">Report a Hotspot</button>
@@ -126,11 +99,7 @@ CloseCon($conn);
 
 
 
-<!--
-    JS for pulling user lat-long coordinates.
-        Not sure why function only works with inline and not external
-        JS file.
--->
+
 
     <div class="latlong-user-coord">
 
