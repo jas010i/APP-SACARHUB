@@ -33,6 +33,7 @@
                 -->
                     <script src="JS/submit.js"></script>
                     <script src="JS/geolocation.js"></script>
+                    <script src="JS/userLocation.js"></script>
 
                     <script defer
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWaEfDgZ0XXRmFZvab-SyU5X92DpcoG2k&map_ids=6cbaf94f194ffc7a&callback=initMap">
@@ -118,34 +119,6 @@
 
         <p id="user-latlong"></p>
 
-        <script>
-        var userLocation = document.getElementById("user-latlong");
-        
-        function getLocation() {
-          if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-          } else { 
-            userLocation.innerHTML = "Geolocation is not supported by this browser.";
-          }
-        }
-
-
-        function showPosition(position) {
-
-        userLocation.style.display = "block";
-
-          userLocation.innerHTML = "Latitude: " + position.coords.latitude + 
-          "<br>Longitude: " + position.coords.longitude;
-        }
-
-
-
-    
-
-
-
-        </script>
-
     </div>
 
 
@@ -177,12 +150,12 @@
 <div class="icon-legend">
 
     <span id="counter-ticker">
-        <i class="material-icons" id="thermo" style="font-size: 7vw;">filter_9_plus</i>
+        <i class="material-icons" id="thermo" style="font-size: 8vw;">filter_9_plus</i>
         <p>The number of reports submitted by users in the area</p>
     </span>
 
-    <span id="counter-ticker" style="margin-bottom: 7%;">
-        <i class="fa fa-thermometer-3" id="thermo" style="font-size: 7vw;"></i>
+    <span id="counter-ticker" style="margin-bottom: 7%; margin-top: 3%;">
+        <i class="fa fa-thermometer-3" id="thermo" style="font-size: 8vw;"></i>
         <p>A visual of how <em>'hot' </em>an area is. It varies from <em>'No Police, Light, Medium, and Heavy' </em>police presence.</p>
     </span>
 
@@ -217,7 +190,7 @@
                 <div class="hotspot-blocks">
                     <h1>Medical Center</h1>
                         <h3><i class="material-icons"  style="font-size:5vw">filter_5</i> Recent Reports</h3>
-                        <i class="fa fa-thermometer-3" id="thermo" style="; font-size:4vw; padding-left: 3%; margin-bottom: 2%;"></i>  Medium Police Presence Reported
+                        <i class="fa fa-thermometer-3" id="thermo" style=" font-size:4vw; padding-left: 3%; margin-bottom: 2%;"></i>  Medium Police Presence Reported
                 </div>
 </div>
 

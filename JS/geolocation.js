@@ -1,18 +1,7 @@
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    // Initialize and add the map
-
-    function initMap() {
+   
+   
+   
+   function initMap() {
     
       // San Antonio, TX
     
@@ -26,5 +15,6 @@
           mapId:'6cbaf94f194ffc7a',
         });
     }
-
+    
+    
     
