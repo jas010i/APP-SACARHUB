@@ -13,13 +13,6 @@ function initMap() {
     mapId: "6cbaf94f194ffc7a",
   });
 
-  
-  heatmap = new google.maps.visualization.HeatmapLayer({
-    data: getPoints(),
-    map: map,
-  });
-}
-
 function toggleHeatmap() {
   heatmap.setMap(heatmap.getMap() ? null : map);
 }
@@ -80,4 +73,5 @@ function getPoints() {
     new google.maps.LatLng(29.48052575084171, -98.60368512947191),
     new google.maps.LatLng(29.48052575084171, -98.60368512947191),
   ];
+}
 }

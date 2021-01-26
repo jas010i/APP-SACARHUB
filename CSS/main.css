@@ -14,6 +14,7 @@
         background-attachment: scroll;
         background-color: rgb(20, 20, 20);
     }
+
     
     header {
         margin: 0;
@@ -46,7 +47,68 @@ div.banner > img {
         margin-left: 10%;
         font-family: 'Jura', sans-serif;
     }
-    
+
+    form {
+        width: 80%;
+        margin-top: 5%;
+        margin-left: 8%;
+    }
+
+    form > label {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        color: white;
+        font-size: 4vw;
+        font-family:  'Titillium Web', sans-serif; 
+    }
+
+    form > input#form-submit {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        margin-bottom: 2%;
+        padding: 2%;
+        padding-left: 0;
+        color: rgb(255, 255, 255);
+        font-size: 4vw;
+        transition: 2s ease-in-out;
+        font-family:  'Titillium Web', sans-serif; 
+    }
+
+    form > input#form-submit:hover {
+        cursor: pointer;
+    }
+
+                @keyframes spizy {
+                    0% {background-color: red;}
+                    25% {background-color: rgb(255, 0, 128);}
+                    50% {background-color:rgb(212, 0, 255);}
+                    75% {background-color:rgb(111, 0, 255);}
+                    100% {background-color:rgba(46,0,255);}
+                }
+
+    select#roads {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        border-bottom: 1px solid white;
+        margin-bottom: 2%;
+        color: rgb(34, 34, 34);
+        text-decoration: none;
+        font-size: 4vw;
+        font-family:  'Titillium Web', sans-serif; 
+    }
+
+    select#quantity {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        border-bottom: 1px solid white;
+        margin-bottom: 2%;
+        color: rgb(34, 34, 34);
+        text-decoration: none;
+        font-size: 4vw;
+        font-family:  'Titillium Web', sans-serif; 
+    }
+
+    /* Comment out button styling. It is not in use.
     div.report-button > button {
         color: white;
         background-color: rgba(0, 0, 0, 0.233);
@@ -89,7 +151,7 @@ div.banner > img {
                         left: 25%;
                         text-align: center;
                     }
-    
+    */
     
     div.live-fade-in > p {
         color: rgb(255, 255, 255);
@@ -179,17 +241,19 @@ div.banner > img {
 
         #map {
             margin-top: 10%;
-            display: block;
+            display: none;
             height: 400px;
             width: 80%;
             margin-left: 10%;
             border: 3px solid black;
           }
 
-          #user-latlong {
+          p#user-latlong {
             color: white; 
             background: rgb(222,0,0);
+            /*
             background: linear-gradient(45deg, rgba(222,0,0,1) 0%, rgba(46,0,255,1) 100%);
+            */
             text-align: center; 
             font-family:  'Titillium Web', sans-serif; 
             font-weight: 400; 
@@ -199,7 +263,11 @@ div.banner > img {
             padding-bottom: 1%;
             margin-top: 0;
             width: 100%;
-            transition: 1s ease-in-out;
+            animation-name: spizy;
+            transition: 2s ease-in-out;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
           }
 
 
