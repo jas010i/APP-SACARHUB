@@ -82,9 +82,10 @@ div.banner > img {
     select#roads {
         background-color: rgba(0, 0, 0, 0);
         border: none;
+        color: white;
         border-bottom: 1px solid rgb(44, 44, 44);
         margin-bottom: 2%;
-        background: -webkit-linear-gradient(#eee, #333);
+        background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(68, 0, 255));
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -96,9 +97,10 @@ div.banner > img {
     select#quantity {
         background-color: rgba(0, 0, 0, 0);
         border: none;
+        color: white;
         border-bottom: 1px solid rgb(44, 44, 44);
         margin-bottom: 2%;
-        background: -webkit-linear-gradient(#eee, #333);
+        background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(68, 0, 255));
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -270,11 +272,11 @@ div.banner > img {
           }
 
                             @keyframes spizy {
-                                0% {background-color: rgba(255, 0, 0, 0.7);}
-                                25% {background-color: rgb(255, 0, 128, .7);}
-                                50% {background-color:rgb(212, 0, 255, .7);}
-                                75% {background-color:rgb(111, 0, 255, .7);}
-                                100% {background-color:rgba(46,0,255, .7);}
+                                0% {background-color: rgba(255, 0, 0, 0.719);}
+                                25% {background-color: rgb(255, 0, 128);}
+                                50% {background-color:rgb(212, 0, 255);}
+                                75% {background-color:rgb(111, 0, 255);}
+                                100% {background-color:rgba(46,0,255);}
                             }
 
 
