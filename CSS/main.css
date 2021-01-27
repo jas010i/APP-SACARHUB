@@ -249,7 +249,7 @@ div.banner > img {
 
           p#user-latlong {
             color: white; 
-            background: rgb(222,0,0);
+            background: rgba(222, 0, 0, 0.445);
             text-align: center; 
             font-family:  'Titillium Web', sans-serif; 
             font-weight: 400; 
@@ -270,11 +270,11 @@ div.banner > img {
           }
 
                             @keyframes spizy {
-                                0% {background-color: red;}
-                                25% {background-color: rgb(255, 0, 128);}
-                                50% {background-color:rgb(212, 0, 255);}
-                                75% {background-color:rgb(111, 0, 255);}
-                                100% {background-color:rgba(46,0,255);}
+                                0% {background-color: rgba(255, 0, 0, 0.7);}
+                                25% {background-color: rgb(255, 0, 128, .7);}
+                                50% {background-color:rgb(212, 0, 255, .7);}
+                                75% {background-color:rgb(111, 0, 255, .7);}
+                                100% {background-color:rgba(46,0,255, .7);}
                             }
 
 
