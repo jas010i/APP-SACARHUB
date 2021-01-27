@@ -18,12 +18,13 @@
     
     header {
         margin: 0;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.95);
         width: 100%;
         display: block;
-        position: relative;
+        position: fixed;
         padding-bottom: 4%;
         top: 0;
+        z-index: +9999;
     }
     
 div.banner > img {
@@ -78,20 +79,15 @@ div.banner > img {
         cursor: pointer;
     }
 
-                @keyframes spizy {
-                    0% {background-color: red;}
-                    25% {background-color: rgb(255, 0, 128);}
-                    50% {background-color:rgb(212, 0, 255);}
-                    75% {background-color:rgb(111, 0, 255);}
-                    100% {background-color:rgba(46,0,255);}
-                }
-
     select#roads {
         background-color: rgba(0, 0, 0, 0);
         border: none;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid rgb(44, 44, 44);
         margin-bottom: 2%;
-        color: rgb(34, 34, 34);
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         text-decoration: none;
         font-size: 4vw;
         font-family:  'Titillium Web', sans-serif; 
@@ -100,9 +96,12 @@ div.banner > img {
     select#quantity {
         background-color: rgba(0, 0, 0, 0);
         border: none;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid rgb(44, 44, 44);
         margin-bottom: 2%;
-        color: rgb(34, 34, 34);
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         text-decoration: none;
         font-size: 4vw;
         font-family:  'Titillium Web', sans-serif; 
@@ -251,9 +250,6 @@ div.banner > img {
           p#user-latlong {
             color: white; 
             background: rgb(222,0,0);
-            /*
-            background: linear-gradient(45deg, rgba(222,0,0,1) 0%, rgba(46,0,255,1) 100%);
-            */
             text-align: center; 
             font-family:  'Titillium Web', sans-serif; 
             font-weight: 400; 
@@ -262,13 +258,24 @@ div.banner > img {
             padding-top: 1%;
             padding-bottom: 1%;
             margin-top: 0;
+            margin-bottom: 0;
+            position: absolute;
+            bottom: 0%;
             width: 100%;
             animation-name: spizy;
             transition: 2s ease-in-out;
-            animation-duration: 7s;
+            animation-duration: 5s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
           }
+
+                            @keyframes spizy {
+                                0% {background-color: red;}
+                                25% {background-color: rgb(255, 0, 128);}
+                                50% {background-color:rgb(212, 0, 255);}
+                                75% {background-color:rgb(111, 0, 255);}
+                                100% {background-color:rgba(46,0,255);}
+                            }
 
 
 

@@ -1,10 +1,10 @@
 
-var count = 61;  
+var count = 6;  
 
 var counter;
 
 
-function submit() {
+function redirect() {
 
     counter = setInterval(timer, 1000);
 
@@ -16,9 +16,9 @@ function submit() {
 
             document.getElementById("popup-notice").innerHTML = "Thank you for the heads up!"
 
-            document.getElementById("button-submit").innerHTML = "Please wait " + count + " seconds before reporting again.";
+            document.getElementById("form-submit").innerHTML = "Please wait " + count + " seconds before reporting again.";
 
-            document.getElementById("button-submit").disabled = true;
+            document.getElementById("form-submit").disabled = true;
 
                         if (count <= 0) {
 

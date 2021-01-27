@@ -3,16 +3,6 @@
 
 <head>
 
-
-<!--php to connect to database
-
-<?php
-include '../PHP/db_connection.php';
-$conn = OpenCon();
-CloseCon($conn);
-?>
--->
-
 <!--title & meta-->
 
         <title>San Antonio Car Hub - Hotspot Tracker</title>
@@ -36,30 +26,6 @@ CloseCon($conn);
         <!--Javascript Links Here-->
                 <!--Native JS-->
                     <script src="JS/submit.js"></script>
-                    <script src="JS/geolocation.js"></script>
-                    <script src="JS/userLocation.js"></script>
-<!--
-            
-                    <script defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWaEfDgZ0XXRmFZvab-SyU5X92DpcoG2k&map_ids=6cbaf94f194ffc7a&callback=initMap">
-                    </script>
-                    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-                    <script
-                      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWaEfDgZ0XXRmFZvab-SyU5X92DpcoG2k&callback=initMap&libraries=visualization&v=weekly"
-                      defer>
-                    </script>
--->
-
-
-
-
-
-
-
-
-
-
-
 
 
         <!--Google Font's Here-->
@@ -91,9 +57,9 @@ CloseCon($conn);
 
 
         <div class="report-button">
-        <form action="sendLoc.php" method="POST">
+        <form action="post_location.php" method="POST">
                 <label for="roads">Select an area:</label>
-                    <select id="roads" name="roads" requried>
+                    <select id="roads" name="roads" required>
                         <option value="null"></option>
                         <option value="Loop 1604/I-10">Loop 1604 and I-10</option>
                         <option value="De Zavala/I-10">De Zavala and I-10</option>
@@ -102,21 +68,15 @@ CloseCon($conn);
                         <option value="Culebra/1604">Culebra and 1604</option>
                     </select> <br>
                 <label for="quantity">How many on site?</label>
-                    <select id="quantity" name="roads">
+                    <select id="quantity" name="quantity" required>
                         <option value="null"></option>
-                        <option value="1.2">1 - 2</option>
-                        <option value="3.4">3 - 4</option>
-                        <option value="5.6">5 - 6</option>
-                        <option value="7p">7 or more</option>
+                        <option value="1">1 - 2</option>
+                        <option value="3">3 - 4</option>
+                        <option value="5">5 - 6</option>
+                        <option value="7">7 or more</option>
                     </select><br>
                 <input id="form-submit" type="submit" value="Submit">
     </div>
-        </header>
-
-
-
-
-
 
     <div class="latlong-user-coord">
 
@@ -124,7 +84,7 @@ CloseCon($conn);
 
     </div>
 
-
+        </header>
 
 
 
@@ -151,7 +111,7 @@ CloseCon($conn);
 <div class="icon-legend">
 
     <span id="counter-ticker">
-        <i class="material-icons" id="thermo" style="font-size: 8vw;">filter_9_plus</i>
+        <i class="material-icons" id="thermo" style="font-size: 8vw; margin-top: 85%;">filter_9_plus</i>
         <p>The number of reports submitted by users in the area</p>
     </span>
 
