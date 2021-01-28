@@ -232,14 +232,7 @@ div.banner > img {
             margin-bottom: 0;
     }
 
-        #map {
-            margin-top: 10%;
-            display: none;
-            height: 400px;
-            width: 80%;
-            margin-left: 10%;
-            border: 3px solid black;
-          }
+
 
           p#user-latlong {
             color: white; 

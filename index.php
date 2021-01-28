@@ -6,7 +6,7 @@
 <!--title & meta-->
 
         <title>San Antonio HEAT</title>
-        <link rel="icon" href="/IMAGES/web-icon.PNG" type="image/icon type">
+        <link rel="icon" href="../APP-SACARHUB/IMAGES/web-icon.PNG">
 
         
         <meta charset="utf-8">
@@ -95,11 +95,6 @@
 
 
 
-        <div class="heat-map">
-
-            <div id="map"></div>
-                 
-        </div>
 
         
 
