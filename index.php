@@ -5,7 +5,9 @@
 
 <!--title & meta-->
 
-        <title>San Antonio Car Hub - Hotspot Tracker</title>
+        <title>San Antonio HEAT</title>
+        <link rel="icon" href="/IMAGES/web-icon.PNG" type="image/icon type">
+
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +27,7 @@
       
         <!--Javascript Links Here-->
                 <!--Native JS-->
-                    <script src="JS/submit.js"></script>
+
 
 
         <!--Google Font's Here-->
@@ -66,7 +68,7 @@
                         <option value="Hausman/I-10">Hausman and I-10</option>
                         <option value="Bandera/1604">Bandera and 1604</option>
                         <option value="Culebra/1604">Culebra and 1604</option>
-                    </select> <br>1
+                    </select> <br>
                 <label for="quantity">How many on site?</label>
                     <select id="quantity" name="quantity" required>
                         <option value="null"></option>

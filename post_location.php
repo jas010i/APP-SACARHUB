@@ -45,8 +45,8 @@ $sql = "INSERT INTO location (areaName, quantityPolice)
 
         <!--title & meta-->
         
-                <title>San Antonio Heat</title>
-                <link rel="icon" href="../IMAGES/web-icon.PNG" type="image/icon type">
+                <title>San Antonio HEAT</title>
+                <link rel="icon" href="/IMAGES/web-icon.PNG" type="image/icon type">
                 
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
