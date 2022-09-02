@@ -22,7 +22,7 @@
         width: 100%;
         display: block;
         position: fixed;
-        padding: 1% 0 0 0;
+        padding: 0;
         top: 0;
         z-index: +9999;
     }
@@ -43,7 +43,7 @@ div.banner > img {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 4vw;
+        font-size: 4.5vw;
         width: 80%;
         margin-left: 10%;
         font-family: 'Jura', sans-serif;
@@ -59,7 +59,7 @@ div.banner > img {
         background-color: rgba(0, 0, 0, 0);
         border: none;
         color: white;
-        font-size: 4vw;
+        font-size: 4.5vw;
         font-family:  'Titillium Web', sans-serif; 
     }
 
@@ -70,7 +70,7 @@ div.banner > img {
         padding: 2%;
         padding-left: 0;
         color: rgb(255, 255, 255);
-        font-size: 4vw;
+        font-size: 4.5vw;
         transition: 2s ease-in-out;
         font-family:  'Titillium Web', sans-serif; 
     }
@@ -86,7 +86,7 @@ div.banner > img {
         border-bottom: 1px solid rgb(44, 44, 44);
         margin-bottom: 2%;
         text-decoration: none;
-        font-size: 4vw;
+        font-size: 4.5vw;
         font-family:  'Titillium Web', sans-serif; 
     }
 
@@ -97,7 +97,7 @@ div.banner > img {
         border-bottom: 1px solid rgb(44, 44, 44);
         margin-bottom: 2%;
         text-decoration: none;
-        font-size: 4vw;
+        font-size: 4.5vw;
         font-family:  'Titillium Web', sans-serif; 
     }
 
@@ -111,7 +111,7 @@ div.banner > img {
         margin-bottom: 5%;
         margin-top: 5%;
         font-family: 'Jura', sans-serif;
-        font-size: 4vw;
+        font-size: 4.5vw;
         position: relative;
         display: block;
         width: 50%;
@@ -137,7 +137,7 @@ div.banner > img {
                         margin-bottom: 7%;
                         margin-top: 7%;
                         font-family: 'Jura', sans-serif;
-                        font-size: 4vw;
+                        font-size: 4.5vw;
                         position: relative;
                         display: block;
                         width: 50%;
@@ -188,7 +188,7 @@ div.banner > img {
         margin-left: 20%;
         text-align: center;
         color: white;
-        font-size: 4vw;
+        font-size: 4.5vw;
         font-family: 'Titillium Web', sans-serif;
     }
     
@@ -307,7 +307,7 @@ div.banner > img {
         text-decoration: none;
         color:rgb(255, 255, 255);
         font-family: 'Titillium Web', sans-serif;
-        font-size: 4vw;
+        font-size: 4.5vw;
         width: 95%;
         margin-left: 0;
     }
