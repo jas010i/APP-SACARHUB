@@ -215,7 +215,7 @@ div.banner > img {
     }
     
     div.hotspot-blocks {
-        background-color: rgba(0, 0, 0, 0.7);
+        background: -webkit-linear-gradient(45deg, rgba(222,0,0,.2) 0%, rgba(46,0,255,.2) 100%);
         width: 100%;
         color: white;
         font-family: 'Titillium Web', sans-serif;
